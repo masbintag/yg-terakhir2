@@ -1,0 +1,540 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom, #ff99cc, #ff66b2);
+    overflow: hidden;
+    color: white;
+}
+
+.container {
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.valentine-photo, .photo {
+    width: 180px; /* Ukuran lebih besar */
+    height: 180px; /* Pastikan foto tidak gepeng */
+    object-fit: cover; /* Foto tidak terpotong aneh */
+    border-radius: 50%;
+    margin: 20px 0;
+    border: 4px solid white;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    transition: 0.3s;
+}
+
+.valentine-photo:hover, .photo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px pink;
+}
+
+input {
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #ff0080;
+}
+
+button {
+    background: linear-gradient(to bottom, #ff66b2, #ff0080);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff0055;
+    transform: scale(1.1);
+}
+
+/* Animasi hati jatuh */
+#hearts-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    clip-path: polygon(50% 0%, 100% 35%, 82% 100%, 50% 75%, 18% 100%, 0% 35%);
+    opacity: 0.7;
+    animation: fall 5s linear infinite;
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(-10vh);
+    }
+    to {
+        transform: translateY(100vh);
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+    font-family: 'Pacifico', cursive;
+    text-align: center;
+    background: linear-gradient(to bottom, #ff99cc, #ff66b2);
+    overflow: hidden;
+    color: white;
+    transition: 0.5s;
+}
+
+.container {
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 20px;
+    border-radius: 15px;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.valentine-photo, .photo {
+    width: 150px;
+    border-radius: 50%;
+    margin: 20px 0;
+    border: 3px solid white;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+input {
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #ff0080;
+    font-family: 'Pacifico', cursive;
+}
+
+button {
+    background: linear-gradient(to bottom, #ff66b2, #ff0080);
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    color: white;
+    transition: 0.3s;
+    font-size: 18px;
+    box-shadow: 0 0 10px pink;
+}
+
+button:hover {
+    background: #ff0055;
+    transform: scale(1.1);
+    box-shadow: 0 0 15px red;
+}
+
+/* Animasi hati jatuh */
+#hearts-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    clip-path: polygon(50% 0%, 100% 35%, 82% 100%, 50% 75%, 18% 100%, 0% 35%);
+    opacity: 0.7;
+    animation: fall 5s linear infinite;
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(-10vh);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@300;400;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: linear-gradient(to bottom, #ff99cc, #ff66b2);
+    overflow: hidden;
+    color: white;
+    transition: 0.5s;
+    position: relative;
+}
+
+/* Efek animasi background bokeh */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../img/bokeh-bg.gif') no-repeat center center/cover;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+/* Container utama */
+.container {
+    margin-top: 50px;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 25px;
+    border-radius: 15px;
+    display: inline-block;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Foto biar lebih elegan */
+.valentine-photo, .photo {
+    width: 200px; /* Ukuran lebih besar */
+    height: 200px; /* Pastikan foto tetap proporsional */
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 20px 0;
+    border: 5px solid white;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+    transition: 0.3s;
+}
+
+.valentine-photo:hover, .photo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px pink;
+}
+
+/* Input field */
+input {
+    padding: 12px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.8);
+    color: #ff0080;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 16px;
+    width: 200px;
+    margin-bottom: 15px;
+}
+
+/* Tombol lebih keren */
+button {
+    background: linear-gradient(to bottom, #ff66b2, #ff0080);
+    border: none;
+    padding: 14px 22px;
+    cursor: pointer;
+    border-radius: 12px;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px pink;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #ff0055;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px red;
+}
+
+/* Animasi hati jatuh */
+#hearts-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    clip-path: polygon(50% 0%, 100% 35%, 82% 100%, 50% 75%, 18% 100%, 0% 35%);
+    opacity: 0.7;
+    animation: fall 5s linear infinite;
+}
+
+@keyframes fall {
+    from {
+        transform: translateY(-10vh);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(100vh);
+        opacity: 0;
+    }
+}
+
+.romantic-text {
+    font-size: 18px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 20px;
+    font-style: italic;
+    animation: fadeIn 3s ease-in-out;
+}
+
+/* Animasi teks berdenyut */
+.heartbeat {
+    font-size: 22px;
+    color: pink;
+    font-weight: bold;
+    animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+/* Efek transisi halus */
+body {
+    transition: opacity 1s ease-in-out;
+}
+
+/* ANIMASI HATI MELAYANG */
+.heart-floating {
+    position: fixed;
+    bottom: -10px;
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    background: red;
+    clip-path: polygon(50% 0%, 100% 35%, 82% 100%, 50% 75%, 18% 100%, 0% 35%);
+    opacity: 0.7;
+    animation: floatHeart 4s linear infinite;
+}
+
+@keyframes floatHeart {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-100vh); opacity: 0; }
+}
+
+/* ANIMASI AWAN BERGERAK */
+.cloud {
+    position: absolute;
+    top: 10%;
+    left: -200px;
+    width: 150px;
+    height: 80px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 50px 0 0 20px white, -50px 0 0 20px white;
+    opacity: 0.8;
+    animation: moveClouds 20s linear infinite;
+}
+
+@keyframes moveClouds {
+    0% { left: -200px; }
+    100% { left: 110%; }
+}
+
+/* ANIMASI BINTANG BERKEDIP */
+.star {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: yellow;
+    border-radius: 50%;
+    opacity: 0.8;
+    animation: twinkle 2s infinite;
+}
+
+@keyframes twinkle {
+    0% { opacity: 0.2; transform: scale(0.8); }
+    50% { opacity: 1; transform: scale(1.2); }
+    100% { opacity: 0.2; transform: scale(0.8); }
+}
+
+/* ANIMASI BALON CINTA */
+.balloon {
+    position: fixed;
+    bottom: -50px;
+    width: 40px;
+    height: 50px;
+    background: pink;
+    border-radius: 50%;
+    clip-path: polygon(50% 0%, 100% 35%, 85% 100%, 50% 80%, 15% 100%, 0% 35%);
+    animation: riseBalloon 6s linear infinite;
+}
+
+@keyframes riseBalloon {
+    0% { transform: translateY(0) scale(1); opacity: 1; }
+    100% { transform: translateY(-100vh) scale(1.1); opacity: 0; }
+}
+
+/* ANIMASI LOVE YANG MUNCUL & HILANG */
+.love {
+    position: fixed;
+    width: 30px;
+    height: 30px;
+    background: red;
+    clip-path: polygon(50% 0%, 100% 35%, 82% 100%, 50% 75%, 18% 100%, 0% 35%);
+    opacity: 0.8;
+    animation: floatLove 5s ease-in-out infinite;
+}
+
+@keyframes floatLove {
+    0% { transform: translateY(0) scale(1); opacity: 1; }
+    50% { transform: translateY(-20px) scale(1.2); opacity: 0.8; }
+    100% { transform: translateY(-40px) scale(1); opacity: 0; }
+}
+
+/* ANIMASI FOTO BERGERAK */
+.photo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+    animation: bounce 3s infinite, fadeIn 2s ease-in-out;
+}
+
+/* Foto sedikit memantul */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Efek foto fade-in */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.9); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Background Kertas */
+.paper-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.paper {
+    background: url('img/paper-texture.jpg');
+    background-size: cover;
+    padding: 30px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Efek Tulisan Tangan */
+.handwritten-text {
+    font-family: 'Dancing Script', cursive;
+    font-size: 22px;
+    color: #4b2e2e;
+    line-height: 1.6;
+    text-align: left;
+}
+
+/* Animasi Love */
+.heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: pink;
+    clip-path: polygon(50% 0%, 100% 35%, 82% 100%, 50% 75%, 18% 100%, 0% 35%);
+    opacity: 0.8;
+    animation: fall 5s linear infinite;
+}
+
+@keyframes fall {
+    from { transform: translateY(0); }
+    to { transform: translateY(100vh); }
+}
+
+/* Tombol */
+button {
+    background-color: pink;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: hotpink;
+}
+
+/* ANIMASI LOVE JATUH */
+#hearts-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.heart {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: pink;
+    clip-path: polygon(50% 0%, 100% 35%, 82% 100%, 50% 75%, 18% 100%, 0% 35%);
+    opacity: 0.8;
+    animation: fall 5s linear infinite;
+}
+
+@keyframes fall {
+    from { transform: translateY(0); }
+    to { transform: translateY(100vh); }
+}
+#back-to-home {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background: #ff4d6d;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#back-to-home:hover {
+    background: #e63950;
+    transform: scale(1.1);
+}
